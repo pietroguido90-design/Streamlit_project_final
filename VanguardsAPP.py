@@ -13,40 +13,23 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for executive metric cards and Key Findings box
+# Custom CSS for executive metric cards (st.metric)
 st.markdown("""
     <style>
-    /* Metric Cards Styling */
+    /* Metric Cards Styling with uniform height */
     div[data-testid="stMetric"] {
         background-color: #f8f9fa;
         border: 1px solid #e2e8f0;
         padding: 18px;
         border-radius: 12px;
         box-shadow: 0px 2px 6px rgba(0,0,0,0.04);
+        min-height: 140px; /* Forza la stessa altezza per tutti e tre i riquadri */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     div[data-testid="stMetric"] label, 
     div[data-testid="stMetric"] [data-testid="stMetricValue"] {
-        color: #0f172a !important;
-    }
-    
-    /* Key Findings Box Styling */
-    .key-finding-box {
-        background-color: #f1f5f9;
-        border-left: 5px solid #00d26a;
-        padding: 18px 22px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        color: #0f172a !important;
-    }
-    .key-finding-box h4 {
-        color: #0f172a !important;
-        margin-top: 0;
-    }
-    .key-finding-box li {
-        color: #334155 !important;
-        margin-bottom: 6px;
-    }
-    .key-finding-box b {
         color: #0f172a !important;
     }
     </style>
