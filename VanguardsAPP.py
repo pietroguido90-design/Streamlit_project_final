@@ -32,6 +32,27 @@ st.markdown("""
     div[data-testid="stMetric"] [data-testid="stMetricValue"] {
         color: #0f172a !important;
     }
+
+    /* Key Findings Box Styling */
+.key-finding-box {
+    background-color: #f1f5f9;
+    border-left: 5px solid #00d26a;
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #0f172a !important;
+}
+.key-finding-box h4 {
+    color: #0f172a !important;
+    margin-top: 0;
+}
+.key-finding-box li {
+    color: #334155 !important;
+    margin-bottom: 6px;
+}
+.key-finding-box b {
+    color: #0f172a !important;
+}
     </style>
 """, unsafe_allow_html=True)
 
