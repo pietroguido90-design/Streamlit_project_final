@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 ### 4. Run the Streamlit Application
 ```bash
-streamlit run Version4.py
+streamlit run VanguardsAPP.py
 ```
 The dashboard will open automatically in your browser at `http://localhost:8501`.
 
